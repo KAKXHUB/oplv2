@@ -1,8 +1,8 @@
 repeat
     wait();
 until game:IsLoaded() and  game.Players and (game.Workspace:FindFirstChild('Trees') and game.Workspace.Trees:FindFirstChild('Tree') and  game.Workspace.Trees.Tree:FindFirstChild('Model')) and (game.Workspace:FindFirstChild('Island14') and game.Workspace.Island14:FindFirstChild('PedestalSpots'));
-setfflag("HumanoidParallelRemoveNoPhysics", "true")
-setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "true")
+setfflag("HumanoidParallelRemoveNoPhysics", "True")
+setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "True")
 setfflag("CrashPadUploadToBacktraceToBacktraceBaseUrl", "")
 setfflag("CrashUploadToBacktracePercentage", "0")
 setfflag("CrashUploadToBacktraceBlackholeToken", "")
