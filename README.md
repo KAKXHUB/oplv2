@@ -6,30 +6,31 @@ setfflag("CrashUploadToBacktraceBlackholeToken", "")
 setfflag("CrashUploadToBacktraceWindowsPlayerToken", "")
 
 local Global_V = {}
----pcall(function()
---    local req = (syn and syn.request) or request
- --   local GetDataFormServer = req({
---        Url = 'http://kangisloser.xyz/GetData',
---        Method = 'POST',
---        Headers = {
- --           ["Content-Type"] = "application/json"
- --       };
- --       Body = game:GetService('HttpService'):JSONEncode({
- --           GameId = tostring(game.PlaceId)
- --       }),
- --   })
- --   local Body = game:GetService("HttpService"):JSONDecode(GetDataFormServer.Body)
- --   Global_V = {
- --      Version_script = Body.Version,
-  --      Script_enabled = Body.ScriptEnabled
- --   }
---end)
+-- pcall(function()
+--     local req = (syn and syn.request) or (http and http.request) or request;
+--     local GetDataFormServer = req({
+--         Url = 'http://kangisloser.xyz/GetData',
+--         Method = 'POST',
+--         Headers = {
+--             ["Content-Type"] = "application/json"
+--         };
+--         Body = game:GetService('HttpService'):JSONEncode({
+--             GameId = tostring(game.PlaceId)
+--         }),
+--     })
+--     local Body = game:GetService("HttpService"):JSONDecode(GetDataFormServer.Body)
+--     Global_V = {
+--         Version_script = Body.Version,
+--         Script_enabled = Body.ScriptEnabled
+--     }
+-- end)
 
--- Global_V = {
---     Version_script = "Testing",
---     Script_enabled = true
--- }
-
+-- if getgenv().IsKangDev == "Haachamaissocute!" then
+    Global_V = {
+        Version_script = "0.0.0 [In Development]";
+        Script_enabled = true;
+    }
+-- end
 if not Global_V.Script_enabled then
     return game.Players.LocalPlayer:Kick("Script was disabled.")
 end
