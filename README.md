@@ -41,7 +41,7 @@ local Cache = {
         ListAllBox = {"Common Box", "Uncommon Box", "Rare Box", "Ultra Rare Box"},
         ListMods = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/KangKung01/KangWinnerB/main/OPL/ModsList.json"))
     },
-    AutoDie = {},
+    AutoDie = {}, 
     Hunter = {},
     Player = {},
     BringMonter = {},
